@@ -8,6 +8,7 @@ import { FaPlus } from "react-icons/fa";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { useSelector } from "react-redux";
 import ProfileDropdown from "./header/ProfileDropdown";
+import { Layout } from "lucide-react";
 function Header() {
   const { data: session, status } = useSession();
   const router = useRouter();
@@ -54,7 +55,8 @@ function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <div className="h-9 px-3 rounded-lg bg-indigo-600 flex items-center justify-center transition-all group-hover:scale-105 active:scale-95 shadow-lg shadow-indigo-500/20">
-            <span className="text-white font-bold text-lg">NotesApp</span>
+            <Layout className="w-5 h-5 text-white mr-2" />
+            <span className="text-white font-bold text-lg">SmartNotesApp</span>
           </div>
         </Link>
         {user && (

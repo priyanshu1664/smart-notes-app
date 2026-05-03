@@ -2,6 +2,7 @@ import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/ui/Header";
 import Providers from "@/components/Providers";
+import Footer from "@/components/ui/Footer";
 
 export const metadata = {
   title: "Smart Notes App",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
             <Sidebar />
             <main className="flex-1 p-6 bg-gray-100 ">{children}</main>
           </div>
+          <Footer></Footer>
         </Providers>
       </body>
     </html>

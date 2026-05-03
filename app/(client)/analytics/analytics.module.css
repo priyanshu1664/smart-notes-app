@@ -1,0 +1,354 @@
+.dash {
+  padding: 0 0 24px;
+}
+.sec {
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(173, 255, 47, 0.2);
+  padding: 20px;
+  margin-bottom: 18px;
+}
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.kpi {
+  background: rgba(173, 255, 47, 0.2);
+  padding: 13px 18px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 0, 0, 0.6);
+}
+.kl {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.kv {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+.ks {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+.tu {
+  color: #1d9e75;
+}
+.td {
+  color: #d85a30;
+}
+.streakKpi {
+  background: rgba(173, 255, 47, 0.2);
+  border-radius: var(--border-radius-md);
+  padding: 13px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  border-radius: 20px;
+  border: 2px solid rgba(255, 0, 0, 0.6);
+}
+.streakNote {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-top: 4px;
+  font-weight: 500;
+  font-style: italic;
+}
+.streakNum {
+  font-size: 26px;
+  font-weight: 500;
+  color: #ef9f27;
+  line-height: 1;
+}
+.streakLabel {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.streakDots {
+  display: flex;
+  gap: 3px;
+  margin-top: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sdot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.card {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 14px;
+}
+.ct {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+.g2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.leg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+.leg span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lsq {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.bDone {
+  background: #e1f5ee;
+  color: #085041;
+}
+.bProg {
+  background: #e6f1fb;
+  color: #0c447c;
+}
+.bPend {
+  background: #faeeda;
+  color: #633806;
+}
+.bOver {
+  background: #fcebeb;
+  color: #791f1f;
+}
+.bHigh {
+  background: #faece7;
+  color: #712b13;
+}
+.bMed {
+  background: #faeeda;
+  color: #854f0b;
+}
+.bLow {
+  background: #eaf3de;
+  color: #3b6d11;
+}
+.periodToggle {
+  display: flex;
+  gap: 4px;
+}
+.pt {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0.5px solid var(--color-border-secondary);
+  color: var(--color-text-secondary);
+  background: transparent;
+  transition: all 0.15s;
+}
+.pt.on {
+  background: var(--color-text-primary);
+  color: var(--color-background-primary);
+  border-color: var(--color-text-primary);
+}
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.barLabel {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  min-width: 52px;
+}
+.barTrack {
+  flex: 1;
+  height: 6px;
+  background: var(--color-background-secondary);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.barFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+.barVal {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  min-width: 22px;
+  text-align: right;
+}
+.tagPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px;
+}
+.tagCount {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: 1px 5px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.toggleRow {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+.tog {
+  font-size: 12px;
+  padding: 5px 14px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  transition: all 0.15s;
+}
+.tog.on {
+  background: var(--color-text-primary);
+  color: var(--color-background-primary);
+}
+.divider {
+  width: 0.5px;
+  background: var(--color-border-secondary);
+  align-self: stretch;
+}
+.feedGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 18px;
+}
+.feedItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 8px 0;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+.feedItem:last-child {
+  border-bottom: none;
+}
+.feedDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+.feedBody {
+  flex: 1;
+  min-width: 0;
+}
+.feedTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.feedSub {
+  font-size: 11px;
+  display: block;
+  gap: 10px;
+  color: var(--color-text-secondary);
+}
+.feedSnip {
+  font-size: 11px;
+  margin-bottom: 8px;
+  color: var(--color-text-secondary);
+}
+.feedTime {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+.ringWrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+}
+.ringLegend {
+  flex: 1;
+}
+.rl {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+.rlVal {
+  margin-left: auto;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+.secLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+@media (max-width: 640px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .g2 {
+    grid-template-columns: 1fr;
+  }
+  .feedGrid {
+    grid-template-columns: 1fr;
+  }
+}

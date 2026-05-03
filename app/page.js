@@ -28,7 +28,7 @@ export default function Home() {
             <span>The smarter way to organize is here</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.1]">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 mb-8 leading-[1.1]">
             Elevate your thoughts. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
               Master your productivity.

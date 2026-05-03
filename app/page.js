@@ -92,7 +92,7 @@ export default function Home() {
               className="group p-8 rounded-3xl border border-slate-100 bg-white hover:border-sky-200 hover:shadow-xl hover:shadow-sky-50 transition-all duration-300"
             >
               <div
-                className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-colors bg-${feature.color}-50 text-${feature.color}-600 group-hover:bg-${feature.color}-600 `}
+                className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-colors bg-${feature.color}-50 text-${feature.color}-600 group-hover:bg-${feature.color}-600`}
               >
                 {feature.icon}
               </div>
